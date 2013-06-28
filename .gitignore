@@ -20,6 +20,9 @@ lib64
 fonts
 img
 res
+flags
+icons
+textures
 
 # Installer logs
 pip-log.txt
