@@ -23,10 +23,10 @@ Map { font-directory: url(./fonts); }
 /* set up font sets for various weights and styles */
 @sans_lt:           "Open Sans Book","DejaVu Sans Book","unifont Medium";
 @sans_lt_italic:    "Open Sans Book Italic","DejaVu Sans Italic","unifont Medium";
-@sans:              "Open Sans Book","DejaVu Sans Book","unifont Medium";
+@sans:              "Open Sans Book","DejaVu Sans","unifont Medium";
 @sans_italic:       "Open Sans Book Italic","DejaVu Sans Italic","unifont Medium";
-@sans_bold:         "Open Sans Book","DejaVu Sans Bold","unifont Medium";
-@sans_bold_italic:  "Open Sans Book Italic","DejaVu Sans Bold Italic","unifont Medium";
+@sans_bold:         "Open Sans","DejaVu Sans","unifont Medium";
+@sans_bold_italic:  "Open Sans Italic","DejaVu Sans Italic","unifont Medium";
 
 /* Some fonts are larger or smaller than others. Use this variable to
    globally increase or decrease the font sizes. */
@@ -37,16 +37,16 @@ Map { font-directory: url(./fonts); }
 /* LANDUSE & LANDCOVER COLORS
 /* ================================================================== */
 
-@land:              #FCFBE7;
-@water:             #C4DFF6;
-@grass:             #E6F2C1;
-@beach:             #FFEEC7;
-@park:              #DAF2C1;
-@cemetery:          #D6DED2;
-@wooded:            #C3D9AD;
-@agriculture:       #F2E8B6;
+@land:              #222;
+@water:             #111;
+@grass:             #292929;
+@beach:             #292929;
+@park:              #292929;
+@cemetery:          #292929;
+@wooded:            #181818;
+@agriculture:       #393939;
 
-@building:          #E4E0E0;
+@building:          #333;
 @hospital:          rgb(229,198,195);
 @school:            #FFF5CC;
 @sports:            #B8E6B8;
@@ -54,7 +54,7 @@ Map { font-directory: url(./fonts); }
 @residential:       @land * 0.98;
 @commercial:        @land * 0.97;
 @industrial:        @land * 0.96;
-@parking:           #EEE;
+@parking:           #222;
 
 /* ================================================================== */
 /* ROAD COLORS
@@ -69,45 +69,45 @@ Map { font-directory: url(./fonts); }
  *         inner fill (inline).
  */
 
-@motorway_line:     #E65C5C;
-@motorway_fill:     lighten(@motorway_line,10%);
+@motorway_line:     #333;
+@motorway_fill:     lighten(@motorway_line,50%);
 @motorway_case:     @motorway_line * 0.9;
 
-@trunk_line:        #E68A5C;
-@trunk_fill:        lighten(@trunk_line,10%);
+@trunk_line:        #333;
+@trunk_fill:        lighten(@trunk_line,50%);
 @trunk_case:        @trunk_line * 0.9;
 
-@primary_line:      #FFC859;
-@primary_fill:      lighten(@primary_line,10%);
+@primary_line:      #333;
+@primary_fill:      lighten(@primary_line,50%);
 @primary_case:      @primary_line * 0.9;
 
-@secondary_line:    #FFE873;
-@secondary_fill:    lighten(@secondary_line,10%);
+@secondary_line:    #333;
+@secondary_fill:    lighten(@secondary_line,50%);
 @secondary_case:    @secondary_line * 0.9;
 
 @standard_line:     @land * 0.85;
-@standard_fill:     #fff;
+@standard_fill:     #000;
 @standard_case:     @land * 0.9;
 
 @pedestrian_line:   @standard_line;
-@pedestrian_fill:   #FAFAF5;
+@pedestrian_fill:   #444;
 @pedestrian_case:   @land;
 
 @cycle_line:        @standard_line;
-@cycle_fill:        #FAFAF5;
+@cycle_fill:        #444;
 @cycle_case:        @land;
 
-@rail_line:         #999;
-@rail_fill:         #fff;
+@rail_line:         #333;
+@rail_fill:         #444;
 @rail_case:         @land;
 
-@aeroway:           #ddd;
+@aeroway:           #222;
 
 /* ================================================================== */
 /* BOUNDARY COLORS
 /* ================================================================== */
 
-@admin_2:           #324;
+@admin_2:           #444;
 
 /* ================================================================== */
 /* LABEL COLORS
@@ -117,31 +117,31 @@ Map { font-directory: url(./fonts); }
    at once or override each individually. */
 @place_halo:        fadeout(#fff,34%);
 
-@country_text:      #435;
+@country_text:      #222;
 @country_halo:      @place_halo;
 
-@state_text:        #546;
+@state_text:        #333;
 @state_halo:        @place_halo;
 
-@city_text:         #444;
+@city_text:         #222;
 @city_halo:         @place_halo;
 
-@town_text:         #666;
+@town_text:         #333;
 @town_halo:         @place_halo;
 
-@poi_text:          #888;
+@poi_text:          #444;
 
-@road_text:         #777;
+@road_text:         #222;
 @road_halo:         #fff;
 
-@other_text:        #888;
+@other_text:        #444;
 @other_halo:        @place_halo;
 
-@locality_text:     #aaa;
+@locality_text:     #999;
 @locality_halo:     @land;
 
 /* Also used for other small places: hamlets, suburbs, localities */
-@village_text:      #888;
+@village_text:      #555;
 @village_halo:      @place_halo;
 
 /* ****************************************************************** */
