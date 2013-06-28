@@ -47,13 +47,13 @@ Map { font-directory: url(./fonts); }
 @agriculture:       #393939;
 
 @building:          #333;
-@hospital:          rgb(229,198,195);
-@school:            #FFF5CC;
-@sports:            #B8E6B8;
+@hospital:          #333);
+@school:            #333;
+@sports:            #333;
 
-@residential:       @land * 0.98;
-@commercial:        @land * 0.97;
-@industrial:        @land * 0.96;
+@residential:       @land;
+@commercial:        @land;
+@industrial:        @land;
 @parking:           #222;
 
 /* ================================================================== */
