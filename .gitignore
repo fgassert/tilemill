@@ -36,3 +36,10 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+# tilemill
+app.db
+cache
+export
+.npm
+.tilemill
