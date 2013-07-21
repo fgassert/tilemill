@@ -46,6 +46,10 @@ cache
 export
 .npm
 .tilemill
+layers
 
 # komodoedit
 *.komodo*
+
+# OSX
+.DS_Store
