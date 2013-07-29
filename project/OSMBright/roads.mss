@@ -25,7 +25,7 @@ and trunks. */
 /* At mid-level scales start to show primary and secondary routes
 as well. */
 
-#roads_med[zoom>=9][zoom<=10] {
+#roads_med[zoom>=9][zoom<=13] {
   [type='motorway'],
   [type='motorway_link'] {
     line-color: @motorway_line;
@@ -43,9 +43,24 @@ as well. */
     [type='motorway_link'],[type='trunk_link'] { line-width: 0.6; }
   }
   [zoom=10] {
+    [type='motorway'],[type='trunk'] { line-width: 1.6; }
+    [type='primary'],[type='secondary'],
+    [type='motorway_link'],[type='trunk_link'] { line-width: 0.6; }
+  }
+  [zoom=11] {
     [type='motorway'],[type='trunk'] { line-width: 1.8; }
     [type='primary'],[type='secondary'],
     [type='motorway_link'],[type='trunk_link'] { line-width: 0.8; }
+  }
+  [zoom=12] {
+    [type='motorway'],[type='trunk'] { line-width: 2; }
+    [type='primary'],[type='secondary'],
+    [type='motorway_link'],[type='trunk_link'] { line-width: 1; }
+  }
+  [zoom=13] {
+    [type='motorway'],[type='trunk'] { line-width: 2.2; }
+    [type='primary'],[type='secondary'],
+    [type='motorway_link'],[type='trunk_link'] { line-width: 1.2; }
   }
 }
 
@@ -65,9 +80,9 @@ come in as well.
 
 /* ---- Casing ----------------------------------------------- */
 
-#roads_high::outline[zoom>=11][zoom<=20],
-#tunnel[render='1_outline'][zoom>=11][zoom<=20],
-#bridge[render='1_outline'][zoom>=11][zoom<=20]{
+#roads_high::outline[zoom>=14][zoom<=20],
+#tunnel[render='1_outline'][zoom>=14][zoom<=20],
+#bridge[render='1_outline'][zoom>=14][zoom<=20]{
   /* -- colors & styles -- */
   line-cap: round;
   [bridge=1],
@@ -103,11 +118,10 @@ come in as well.
   }
   [tunnel=1] { line-dasharray: 3,3; }        
   /* -- widths -- */
-  [zoom=11] {
+/*  [zoom=11] {
     [stylegroup='motorway'] { line-width: @rdz11_maj + 2; }
     [stylegroup='mainroad'] { line-width: @rdz11_med + 1.6; }
     [stylegroup='minorroad']{ line-width: @rdz11_min; }
-    /* No minor bridges yet */
     [stylegroup='service']  { line-width: 0; }
     [stylegroup='noauto']   { line-width: 0; }
     [stylegroup='railway']  { line-width: 0; }
@@ -116,15 +130,14 @@ come in as well.
     [stylegroup='motorway'] { line-width: @rdz12_maj + 2; }
     [stylegroup='mainroad'] { line-width: @rdz12_med + 2; }
     [stylegroup='minorroad']{ line-width: @rdz12_min; }
-    /* No minor bridges yet */
     [stylegroup='service']  { line-width: 0; }
     [stylegroup='noauto']   { line-width: 0; }
     [stylegroup='railway']  { line-width: 0; }
-  }
+  }*/
   [zoom=13] {
     [stylegroup='motorway'] { line-width: @rdz13_maj + 2; }
     [stylegroup='mainroad'] { line-width: @rdz13_med + 2; }
-    [stylegroup='minorroad']{ line-width: @rdz13_min + 2; }
+    /*[stylegroup='minorroad']{ line-width: @rdz13_min + 2; }*/
     /* No minor bridges yet */
     [stylegroup='service']  { line-width: 0; }
     [stylegroup='noauto']   { line-width: 0; }
@@ -174,9 +187,9 @@ come in as well.
 }
 
 
-#roads_high[zoom>=11][zoom<=20],
-#tunnel[render='3_inline'][zoom>=11][zoom<=20],
-#bridge[render='3_inline'][zoom>=11][zoom<=20]{
+#roads_high[zoom>=14][zoom<=20],
+#tunnel[render='3_inline'][zoom>=14][zoom<=20],
+#bridge[render='3_inline'][zoom>=14][zoom<=20]{
   /* -- colors & styles -- */
   line-color: @standard_fill;
   [type='motorway'],
@@ -224,7 +237,7 @@ come in as well.
     line-cap: butt;
   }
   /* -- widths -- */
-  [zoom=11] {
+/*  [zoom=11] {
     [stylegroup='motorway'] { line-width: @rdz11_maj; }
     [stylegroup='mainroad'] { line-width: @rdz11_med; }
     [stylegroup='minorroad']{ line-width: 0; }
@@ -235,21 +248,21 @@ come in as well.
     [stylegroup='mainroad'] { line-width: @rdz12_med; }
     [stylegroup='minorroad']{ line-width: 0; }
     [stylegroup='railway']  { line-width: 0.4; }
-  }
+  }*/
   [zoom=13] {
     [stylegroup='motorway'] { line-width: @rdz13_maj; }
     [stylegroup='mainroad'] { line-width: @rdz13_med; }
-    [stylegroup='minorroad']{ line-width: @rdz13_min; }
-    [stylegroup='service']  { line-width: @rdz13_min / 3; }
-    [stylegroup='noauto']   { line-width: @rdz13_min / 4; line-dasharray: 1,1; }
+    /*[stylegroup='minorroad']{ line-width: @rdz13_min; }*/
+    /*[stylegroup='service']  { line-width: @rdz13_min / 3; }*/
+    /*[stylegroup='noauto']   { line-width: @rdz13_min / 4; line-dasharray: 1,1; }*/
     [stylegroup='railway']  { line-width: 0.8; }
   }
   [zoom=14] {
     [stylegroup='motorway'] { line-width: @rdz14_maj; }
     [stylegroup='mainroad'] { line-width: @rdz14_med; }
     [stylegroup='minorroad']{ line-width: @rdz14_min; }
-    [stylegroup='service']  { line-width: @rdz14_min / 3; }
-    [stylegroup='noauto']   { line-width: @rdz14_min / 4; line-dasharray: 1,1; }
+    /*[stylegroup='service']  { line-width: @rdz14_min / 3; }*/
+    /*[stylegroup='noauto']   { line-width: @rdz14_min / 4; line-dasharray: 1,1; }*/
     [stylegroup='railway']  { line-width: 1; }
   }
   [zoom=15] {

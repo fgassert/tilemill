@@ -17,9 +17,9 @@
   polygon-gamma: 0.75;
 }
 
-#landuse_gen0[zoom>3][zoom<=9],
-#landuse_gen1[zoom>9][zoom<=12],
-#landuse[zoom>12] {
+#landuse_gen0[zoom>4][zoom<=10],
+#landuse_gen1[zoom>10][zoom<=13],
+#landuse[zoom>13] {
   [type='cemetery']      { polygon-fill: @cemetery; }
   [type='college']       { polygon-fill: @school; }
   [type='commercial']    { polygon-fill: @industrial; }
@@ -41,7 +41,7 @@
   [type='wood']          { polygon-fill: @wooded; }
 }
 
-#landuse_overlays[type='nature_reserve'][zoom>6] {
+#landuse_overlays[type='nature_reserve'][zoom>7] {
   line-color: darken(@wooded,25%);
   line-opacity:  0.3;
   line-dasharray: 1,1;
@@ -55,13 +55,13 @@
   [zoom>=12] { line-width: 2.0; }
 }
  
-#landuse_overlays[type='wetland'][zoom>11] {
+#landuse_overlays[type='wetland'][zoom>12] {
   [zoom>11][zoom<=14] { polygon-pattern-file:url(img/marsh-16.png); }
   [zoom>14] { polygon-pattern-file:url(img/marsh-32.png);}
   }
 
 /* ---- BUILDINGS ---- */
-#buildings[zoom>=12][zoom<=16] {
+#buildings[zoom>=13][zoom<=17] {
   polygon-fill:@building;
   [zoom>=14] {
     line-color:darken(@building,5%);
@@ -75,12 +75,12 @@
 // At the highest zoom levels, render buildings in fancy pseudo-3D.
 // Ordering polygons by their Y-position is necessary for this effect
 // so we use a separate layer that does this for us.
-#buildings[zoom>=17][type != 'hedge'] {
+#buildings[zoom>=18][type != 'hedge'] {
   building-fill:@building;
   building-height:1.25;
 }
 
-#buildings[zoom>=17][type = 'hedge'] {
+#buildings[zoom>=18][type = 'hedge'] {
   building-fill:@wooded;
   building-height:1.25;
 }
@@ -91,9 +91,9 @@
 
 Map { background-color: @water; }
 
-#water_gen0[zoom>3][zoom<=9],
-#water_gen1[zoom>9][zoom<=12],
-#water[zoom>12] {
+#water_gen0[zoom>4][zoom<=10],
+#water_gen1[zoom>10][zoom<=13],
+#water[zoom>13] {
   polygon-fill: @water;
 }
 
@@ -174,7 +174,7 @@ Map { background-color: @water; }
 /* ================================================================== */
 
 
-#barrier_points[zoom>=17][stylegroup = 'divider'] {
+#barrier_points[zoom>=18][stylegroup = 'divider'] {
   marker-height: 2;
   marker-fill: #c7c7c7;
   marker-line-opacity:0;
@@ -185,19 +185,19 @@ Map { background-color: @water; }
 /* BARRIER LINES
 /* ================================================================== */
 
-#barrier_lines[zoom>=17][stylegroup = 'gate'] {
+#barrier_lines[zoom>=18][stylegroup = 'gate'] {
   line-width:2.5;
   line-color:#aab;
   line-dasharray:3,2;
 }
 
-#barrier_lines[zoom>=17][stylegroup = 'fence'] {
+#barrier_lines[zoom>=18][stylegroup = 'fence'] {
   line-width:1.75;
   line-color:#aab;
   line-dasharray:1,1;
 }
 
-#barrier_lines[zoom>=17][stylegroup = 'hedge'] {
+#barrier_lines[zoom>=18][stylegroup = 'hedge'] {
   line-width:3;
   line-color:darken(@park,5%);
 
