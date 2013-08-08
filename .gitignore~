@@ -44,10 +44,9 @@ nosetests.xml
 app.db
 cache
 export
-layers
 .npm
 .tilemill
-
+layers
 
 # komodoedit
 *.komodo*
