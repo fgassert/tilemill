@@ -47,6 +47,12 @@ export
 layers
 .npm
 .tilemill
+*.prj
+*.index
+*.shp
+*.dbf
+*.shx
+*.zip
 
 
 # komodoedit
