@@ -36,7 +36,8 @@
       "id": "land",
       "name": "land",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "srs-name": "900913"
+      "srs-name": "900913",
+      "status": "off"
     },
     {
       "Datasource": {
@@ -47,7 +48,8 @@
       "id": "processed_p",
       "name": "processed_p",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "srs-name": "900913"
+      "srs-name": "900913",
+      "status": "off"
     },
     {
       "Datasource": {
@@ -58,7 +60,8 @@
       "id": "shoreline_300",
       "name": "shoreline_300",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "srs-name": "900913"
+      "srs-name": "900913",
+      "status": "off"
     },
     {
       "Datasource": {
@@ -78,7 +81,7 @@
       "name": "landuse_gen0",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "srs-name": "900913",
-      "status": "on"
+      "status": "off"
     },
     {
       "Datasource": {
@@ -98,7 +101,7 @@
       "name": "landuse_gen1",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "srs-name": "900913",
-      "status": "on"
+      "status": "off"
     },
     {
       "Datasource": {
@@ -118,7 +121,7 @@
       "name": "landuse",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "srs-name": "900913",
-      "status": "on"
+      "status": "off"
     },
     {
       "Datasource": {
@@ -138,7 +141,7 @@
       "name": "waterway_low",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "srs-name": "900913",
-      "status": "on"
+      "status": "off"
     },
     {
       "Datasource": {
@@ -154,7 +157,8 @@
       "id": "waterway_med",
       "name": "waterway_med",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "srs-name": "900913"
+      "srs-name": "900913",
+      "status": "off"
     },
     {
       "Datasource": {
@@ -170,7 +174,8 @@
       "id": "waterway_high",
       "name": "waterway_high",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "srs-name": "900913"
+      "srs-name": "900913",
+      "status": "off"
     },
     {
       "Datasource": {
@@ -190,7 +195,7 @@
       "name": "water_gen0",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "srs-name": "900913",
-      "status": "on"
+      "status": "off"
     },
     {
       "Datasource": {
@@ -210,7 +215,7 @@
       "name": "water_gen1",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "srs-name": "900913",
-      "status": "on"
+      "status": "off"
     },
     {
       "Datasource": {
@@ -230,7 +235,7 @@
       "name": "water",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "srs-name": "900913",
-      "status": "on"
+      "status": "off"
     },
     {
       "Datasource": {
@@ -249,7 +254,8 @@
       "id": "landuse_overlays",
       "name": "landuse_overlays",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "srs-name": "900913"
+      "srs-name": "900913",
+      "status": "off"
     },
     {
       "Datasource": {
@@ -283,7 +289,8 @@
       "id": "buildings",
       "name": "buildings",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "srs-name": "900913"
+      "srs-name": "900913",
+      "status": "off"
     },
     {
       "Datasource": {
@@ -569,5 +576,5 @@
   "metatile": 3,
   "attribution": "Data © OpenStreetMap (and) contributors, CC-BY-SA",
   "description": "",
-  "name": "OSM Bright"
+  "name": "OSM Bright Roads"
 }
