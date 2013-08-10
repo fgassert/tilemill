@@ -50,7 +50,7 @@
   }
 }
 
-#place::state[type='state'][zoom>=5][zoom<=10] {
+#place::state[type='state'][zoom>=5][zoom<=11] {
   text-name:'[name]';
   text-face-name:@sans_bold_italic;
   text-placement:point;
@@ -83,6 +83,11 @@
     text-size:14 + @text_adjust;
     text-character-spacing: 2;
   }
+  [zoom=11] {
+    text-size:16 + @text_adjust;
+    text-character-spacing: 2;
+    text-transform: uppercase;
+  }
 }
 
 /* ---- Cities ------------------------------------------------------ */
@@ -113,8 +118,9 @@
   }
   [zoom=12] {
     text-size:14 + @text_adjust;
-    text-character-spacing: 1;
+    text-character-spacing: 1.5;
     text-wrap-width: 100;
+    text-transform: uppercase;
   }
   [zoom=13] {
     text-size:15 + @text_adjust;
@@ -138,7 +144,7 @@
 
 /* ---- Towns ------------------------------------------------------- */
 
-#place::town[type='town'][zoom>=10][zoom<=18] {
+#place::town[type='town'][zoom>=11][zoom<=18] {
   text-name:'[name]';
   text-face-name:@sans;
   text-placement:point;
@@ -272,7 +278,7 @@
   [zoom>=19][area>=0] {
     text-name: "[name]";
     text-halo-radius: 1.5;
-    text-face-name:@sans;
+    text-face-name:@sans_italic;
     text-size: 11 + @text_adjust;
     text-wrap-width:30;
     text-fill: @locality_text;

@@ -37,23 +37,23 @@ Map { font-directory: url(./fonts); }
 /* LANDUSE & LANDCOVER COLORS
 /* ================================================================== */
 
-@land:              #111;
+@land:              #131313;
 @water:             #080808;
 @grass:             #111;
-@beach:             #141414;
-@park:              #141414;
-@cemetery:          #141414;
-@wooded:            #0a0a0a;
-@agriculture:       #181818;
+@beach:             #111;
+@park:              #111;
+@cemetery:          #111;
+@wooded:            #0c0c0c;
+@agriculture:       #131313;
 
 @building:          #1a1a1a;
-@hospital:          #1a1a1a;
-@school:            #1a1a1a;
-@sports:            #1a1a1a;
+@hospital:          #161616;
+@school:            #161616;
+@sports:            #161616;
 
-@residential:       #181818;
-@commercial:        #181818;
-@industrial:        #181818;
+@residential:       #141414;
+@commercial:        #141414;
+@industrial:        #141414;
 @parking:           #0e0e0e;
 
 /* ================================================================== */
@@ -71,43 +71,43 @@ Map { font-directory: url(./fonts); }
 
 @motorway_line:     #333;
 @motorway_fill:     darken(@motorway_line,50%);
-@motorway_case:     lighten(@motorway_line,5%);
+@motorway_case:     fadeout(@motorway_line,25%);
 
 @trunk_line:        #333;
 @trunk_fill:        darken(@trunk_line,50%);
-@trunk_case:        lighten(@motorway_line,5%);
+@trunk_case:        fadeout(@motorway_line,25%);
 
 @primary_line:      #333;
 @primary_fill:      darken(@primary_line,50%);
-@primary_case:      lighten(@motorway_line,5%);
+@primary_case:      fadeout(@motorway_line,25%);
 
 @secondary_line:    #333;
 @secondary_fill:    darken(@secondary_line,50%);
-@secondary_case:    lighten(@motorway_line,5%);
+@secondary_case:    fadeout(@motorway_line,25%);
 
 @standard_line:     @land * 1.5;
-@standard_fill:     #333;
-@standard_case:     @land * 1.2;
+@standard_fill:     darken(@standard_line,50%);
+@standard_case:     fadeout(@standard_line,50%);
 
 @pedestrian_line:   @standard_line;
-@pedestrian_fill:   #333;
-@pedestrian_case:   fade(@land,37%);
+@pedestrian_fill:   darken(@pedestrian_line,50%);
+@pedestrian_case:   fadeout(@pedestrian_line,50%);
 
 @cycle_line:        @standard_line;
-@cycle_fill:        #444;
-@cycle_case:        @land;
+@cycle_fill:        darken(@cycle_line,50%);
+@cycle_case:        fadeout(@cycle_line,50%);
 
-@rail_line:         #2a2a2a;
+@rail_line:         #2f2f2f;
 @rail_fill:         #141414;
 @rail_case:         @land;
 
-@aeroway:           #222;
+@aeroway:           #000;
 
 /* ================================================================== */
 /* BOUNDARY COLORS
 /* ================================================================== */
 
-@admin_2:           #444;
+@admin_2:           #333;
 
 /* ================================================================== */
 /* LABEL COLORS
