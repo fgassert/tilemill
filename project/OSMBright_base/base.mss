@@ -77,7 +77,7 @@
 // so we use a separate layer that does this for us.
 #buildings[zoom>=18][type != 'hedge'] {
   building-fill:@building;
-  building-height:1.25;
+  building-height:1.5;
 }
 
 #buildings[zoom>=18][type = 'hedge'] {

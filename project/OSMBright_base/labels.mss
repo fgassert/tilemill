@@ -193,8 +193,8 @@
 
 #place::small[type='village'][zoom>=14],
 #place::small[type='suburb'][zoom>=14],
-#place::small[type='hamlet'][zoom>=14],
-#place::small[type='neighbourhood'][zoom>=14] {
+#place::small[type='hamlet'][zoom>=15],
+#place::small[type='neighbourhood'][zoom>=15] {
   text-name:'[name]';
   text-face-name:@sans;
   text-placement:point;
@@ -389,12 +389,13 @@
 /* ROAD LABELS
 /* ================================================================== */
 
-#motorway_label[zoom>=12][zoom<=15][reflen<=8] {
+#motorway_label[zoom>=11][zoom<=15][reflen<=8] {
   text-name: "[ref]";
   text-size: 9;
   text-face-name: @sans_bold;
   text-fill: #fff;
-  text-min-distance:160;
+  text-min-distance:100;
+  [zoom>11] {text-min-distance:180;}
   /*shield-file: url(img/shield-motorway-1.png);
   [type='motorway'] {
     [reflen=1] { shield-file: url(img/shield-motorway-1.png); }
@@ -423,8 +424,8 @@
 /**/
 }
 
-#motorway_label[type='motorway'][zoom>10],
-#motorway_label[type='trunk'][zoom>10] {
+#motorway_label[type='motorway'][zoom>11],
+#motorway_label[type='trunk'][zoom>11] {
   text-name:"[name]";
   text-face-name:@sans_bold;
   text-placement:line;
