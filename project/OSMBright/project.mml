@@ -567,7 +567,7 @@
     }
   ],
   "scale": 1,
-  "metatile": 3,
+  "metatile": 4,
   "attribution": "Data © OpenStreetMap (and) contributors, CC-BY-SA",
   "description": "",
   "name": "OSM Bright"

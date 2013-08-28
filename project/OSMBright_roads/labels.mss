@@ -442,8 +442,8 @@
 }
 
 #mainroad_label[type='primary'][zoom>12],
-#mainroad_label[type='secondary'][zoom>13],
-#mainroad_label[type='tertiary'][zoom>14] {
+#mainroad_label[type='secondary'][zoom>12],
+#mainroad_label[type='tertiary'][zoom>12] {
   text-name:'[name]';
   text-face-name:@sans;
   text-placement:line;
