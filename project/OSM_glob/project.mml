@@ -1,0 +1,282 @@
+{
+  "bounds": [
+    -151.5822,
+    -70.8447,
+    174.6678,
+    82.4024
+  ],
+  "center": [
+    -78.2814,
+    37.0201,
+    3
+  ],
+  "format": "png",
+  "interactivity": false,
+  "minzoom": 2,
+  "maxzoom": 10,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "palette.mss",
+    "base.mss",
+    "labels.mss",
+    "backcolor.mss"
+  ],
+  "Layer": [
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.3.0/physical/10m-land.zip",
+        "id": "land",
+        "project": "OSM_glob",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      },
+      "class": "shp",
+      "geometry": "polygon",
+      "id": "land",
+      "name": "land",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "900913"
+    },
+    {
+      "Datasource": {
+        "file": "http://tilemill-data.s3.amazonaws.com/osm/coastline-good.zip"
+      },
+      "class": "shp",
+      "geometry": "polygon",
+      "id": "processed_p",
+      "name": "processed_p",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "900913"
+    },
+    {
+      "Datasource": {
+        "file": "http://tilemill-data.s3.amazonaws.com/osm/shoreline_300.zip"
+      },
+      "class": "shp",
+      "geometry": "polygon",
+      "id": "shoreline_300",
+      "name": "shoreline_300",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "900913"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -165.96561893930925,
+        -50.6696248183775,
+        176.0938293028783,
+        81.95527752537252
+      ],
+      "id": "10mlakes",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/physical/10m-lakes.zip",
+        "id": "10mlakes",
+        "project": "OSM_glob",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "10mlakes"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -141.00554866607175,
+        -55.12092376716174,
+        140.977626994236,
+        70.07531036419849
+      ],
+      "id": "admin0",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-boundary-lines-land.zip"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "admin0"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -79.98888545781983,
+        -59.47280283618958,
+        148.8564742436166,
+        80.83253489223632
+      ],
+      "id": "admin0disputed",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-breakaway-disputed-areas.zip"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "admin0disputed"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -139.04719194227846,
+        -49.25074024841062,
+        178.44862226797608,
+        81.13822602001463
+      ],
+      "id": "admin1",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-1-states-provinces-lines.zip",
+        "id": "admin1",
+        "project": "OSM_glob",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "admin1"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -177.23111296705957,
+        -80.39243740332427,
+        178.5220789252438,
+        73.97178749749688
+      ],
+      "id": "admin0_label",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-country-points.zip",
+        "id": "admin0_label",
+        "project": "OSM_glob",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "admin0_label"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -179.9120885829999,
+        -83.03840307099995,
+        179.90264123600002,
+        81.29817480300005
+      ],
+      "id": "admin1_label",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/fgassert/Documents/WorkSync/ne_10m_admin_1_labelpoints.shp",
+        "id": "admin1_label",
+        "project": "OSM_glob",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "admin1_label"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99978348919961,
+        -85.051,
+        180,
+        83.6338109340297
+      ],
+      "id": "10madmin0scaleranksw",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-scale-ranks-with-minor-islands.zip"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "10madmin0scaleranksw"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -180,
+        -29.000586061407812,
+        180,
+        21.99976608610793
+      ],
+      "id": "10madmin0pacificgrou",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-pacific-groupings.zip"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "10madmin0pacificgrou"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99999999990007,
+        -55.91477792755927,
+        180,
+        83.63432689077344
+      ],
+      "id": "admin1_shp",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-1-states-provinces-scale-ranks.zip",
+        "id": "admin1_shp",
+        "project": "OSM_glob",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "admin1_shp"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -179.58997888396897,
+        -81.17908472282718,
+        179.38330358817024,
+        82.48332318035943
+      ],
+      "id": "10mpopulatedplacessi",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-populated-places-simple.zip"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "10mpopulatedplacessi"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -179.58997888396897,
+        -81.17908472282718,
+        179.38330358817024,
+        82.48332318035943
+      ],
+      "id": "10mpopulatedplaces",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-populated-places.zip"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "10mpopulatedplaces"
+    }
+  ],
+  "scale": 1,
+  "metatile": 3,
+  "attribution": "© Francis Gassert, CC-BY. Data naturalearthdata.com",
+  "description": "",
+  "name": "Globe Base"
+}
