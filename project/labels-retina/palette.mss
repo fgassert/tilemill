@@ -38,7 +38,7 @@ Map { font-directory: url(./fonts); }
 @land:              #191919;
 @water:             #333333;
 @disputed:          #1b1b1b;
-@bg:   				@water;
+@bg: transparent;
 
 /* ================================================================== */
 /* BOUNDARY COLORS

@@ -262,9 +262,9 @@
       "name": "pop2"
     }
   ],
-  "scale": 1,
+  "scale": 2,
   "metatile": 4,
   "attribution": "© Francis Gassert, CC-BY. Data naturalearthdata.com",
   "description": "",
-  "name": "Globe Base"
+  "name": "labels-retina"
 }

@@ -263,8 +263,8 @@
     }
   ],
   "scale": 1,
-  "metatile": 4,
+  "metatile": 1,
   "attribution": "© Francis Gassert, CC-BY. Data naturalearthdata.com",
   "description": "",
-  "name": "Globe Base"
+  "name": "base2"
 }
