@@ -134,7 +134,7 @@
             ]
         },
         "cartoVars": {
-            "water": "#080808",
+            "water": "#0c0c0c",
             "bg": "@water"
         }
     },

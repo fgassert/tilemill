@@ -36,7 +36,7 @@ Map { font-directory: url(./fonts); }
 /* ================================================================== */
 
 @land:              #191919;
-@water: #080808;
+@water: #0c0c0c;
 @disputed:          #1b1b1b;
 @bg: @water;
 

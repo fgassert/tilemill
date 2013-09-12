@@ -13,7 +13,7 @@
   "format": "png8",
   "interactivity": false,
   "minzoom": 1,
-  "maxzoom": 8,
+  "maxzoom": 7,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
     "palette.mss",
@@ -36,7 +36,8 @@
       "id": "land",
       "name": "land",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "srs-name": "900913"
+      "srs-name": "900913",
+      "status": "off"
     },
     {
       "Datasource": {
@@ -47,7 +48,8 @@
       "id": "processed_p",
       "name": "processed_p",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "srs-name": "900913"
+      "srs-name": "900913",
+      "status": "off"
     },
     {
       "Datasource": {
@@ -58,7 +60,8 @@
       "id": "shoreline_300",
       "name": "shoreline_300",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "srs-name": "900913"
+      "srs-name": "900913",
+      "status": "off"
     },
     {
       "geometry": "polygon",
@@ -79,7 +82,8 @@
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "10mlakes"
+      "name": "10mlakes",
+      "status": "off"
     },
     {
       "geometry": "polygon",
@@ -100,7 +104,8 @@
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "10murbanareas"
+      "name": "10murbanareas",
+      "status": "off"
     },
     {
       "geometry": "linestring",
@@ -118,7 +123,8 @@
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "admin0"
+      "name": "admin0",
+      "status": "on"
     },
     {
       "geometry": "polygon",
@@ -136,7 +142,8 @@
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "admin0disputed"
+      "name": "admin0disputed",
+      "status": "on"
     },
     {
       "geometry": "linestring",
@@ -157,7 +164,8 @@
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "admin1"
+      "name": "admin1",
+      "status": "on"
     },
     {
       "geometry": "point",
@@ -178,7 +186,8 @@
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "admin0_label"
+      "name": "admin0_label",
+      "status": "on"
     },
     {
       "geometry": "point",
@@ -199,7 +208,8 @@
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "admin0_label2"
+      "name": "admin0_label2",
+      "status": "on"
     },
     {
       "geometry": "point",
@@ -220,7 +230,8 @@
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "pop"
+      "name": "pop",
+      "status": "on"
     },
     {
       "geometry": "polygon",
@@ -241,7 +252,8 @@
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "admin1_shp"
+      "name": "admin1_shp",
+      "status": "on"
     },
     {
       "geometry": "point",
@@ -259,7 +271,8 @@
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "pop2"
+      "name": "pop2",
+      "status": "on"
     }
   ],
   "scale": 1,

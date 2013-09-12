@@ -6,8 +6,9 @@ Map {
 @rastercolor: #f77;
 @bg: fadeout(@rastercolor, 100%);
 
-#raster {
+.raster {
   raster-opacity:1;
+  raster-comp-op:screen;
   raster-scaling:gaussian;
   raster-colorizer-default-mode:linear;
   raster-colorizer-default-color:transparent;

@@ -1,9 +1,9 @@
 {
   "bounds": [
     -180,
-    -85.05112877980659,
+    -85.0511,
     180,
-    85.05112877980659
+    85.0511
   ],
   "center": [
     0,
@@ -28,7 +28,7 @@
         85.051
       ],
       "id": "raster",
-      "class": "",
+      "class": "raster",
       "Datasource": {
         "file": "/Users/fgassert/Documents/WorkSync/geotiff/coffee_yield.tif",
         "band": "1"
@@ -44,5 +44,6 @@
   "scale": 1,
   "metatile": 2,
   "name": "raster",
-  "description": ""
+  "description": "",
+  "attribution": ""
 }
