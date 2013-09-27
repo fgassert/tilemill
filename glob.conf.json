@@ -3,8 +3,6 @@
         "source": "OSM_glob",
         "destination": "base",
         "format": "mbtiles",
-        "minzoom": 0,
-        "maxzoom": 7,
         "mml": {
             "name":"base",
             "scale":1,
@@ -72,8 +70,6 @@
         "source": "OSM_glob",
         "destination": "base2",
         "format": "mbtiles",
-        "minzoom": 0,
-        "maxzoom": 7,
         "mml": {
             "name":"base2",
             "scale":1,
@@ -142,8 +138,6 @@
         "source": "OSM_glob",
         "destination": "labels",
         "format": "mbtiles",
-        "minzoom": 1,
-        "maxzoom": 7,
         "mml": {
             "name":"labels",
             "scale":1,
@@ -211,8 +205,6 @@
         "source": "OSM_glob",
         "destination": "labels-retina",
         "format": "mbtiles",
-        "minzoom": 1,
-        "maxzoom": 7,
         "mml": {
             "name":"labels-retina",
             "scale":2,
@@ -276,4 +268,5 @@
             "bg": "transparent"
         }
     }
+
 ]

@@ -13,7 +13,7 @@
   "format": "png8",
   "interactivity": false,
   "minzoom": 1,
-  "maxzoom": 7,
+  "maxzoom": 9,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
     "palette.mss",
@@ -178,7 +178,7 @@
       "id": "admin0_label",
       "class": "",
       "Datasource": {
-        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-country-points.zip",
+        "file": "/Users/fgassert/Documents/GIS/shps/ne_10m_admin_0_labelpoints.shp",
         "id": "admin0_label",
         "project": "OSM_glob",
         "srs": ""
@@ -200,8 +200,8 @@
       "id": "admin0_label2",
       "class": "",
       "Datasource": {
-        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-country-points.zip",
-        "id": "admin0_label",
+        "file": "/Users/fgassert/Documents/GIS/shps/ne_10m_admin_0_labelpoints.shp",
+        "id": "admin0_label2",
         "project": "OSM_glob",
         "srs": ""
       },
@@ -244,7 +244,7 @@
       "id": "admin1_shp",
       "class": "",
       "Datasource": {
-        "file": "/Users/fgassert/Documents/WorkSync/10madmin1point.shp",
+        "file": "/Users/fgassert/Documents/GIS/shps/10madmin1point.shp",
         "id": "admin1_shp",
         "project": "OSM_glob",
         "srs": ""
@@ -266,7 +266,10 @@
       "id": "pop2",
       "class": "",
       "Datasource": {
-        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-populated-places-simple.zip"
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-populated-places-simple.zip",
+        "id": "pop2",
+        "project": "OSM_glob",
+        "srs": ""
       },
       "srs-name": "autodetect",
       "srs": "",

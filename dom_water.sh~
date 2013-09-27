@@ -1,3 +1,0 @@
-#!/bin/bash
-
-node ~/Documents/git/projectmill/index.js --mill --render -c ~/Documents/git/tilemill/dom_water.conf.json -p ~/Documents/git/tilemill/ -f

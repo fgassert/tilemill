@@ -26,11 +26,11 @@ def check_mkdir(path):
 
 def main():
     args = sys.argv[:]
-    if len(args)<3:
-        sys.exit("Usage: %s searchdir [-o outputdir] [-f \"filter\"] expression [...] %%1 [...] [%%2]\n    %s -h' for help" % (args[0],args[0]))
-    elif len(args)>1:
+    if len(args)>1:
         if args[1]=="-h":
-            sys.exit("Decends a directory (searchdir) and performs an expression on all files in the directory. Will duplicate directory structure and filenames into optional output directory (outdir).\n\n Usage: %s searchdir [-o outputdir] [-f \"filter\"] expression [...] %%1 [...] [%%2] \n %%1 is replaced by filenames in (searchdir)\n %%2 is %1 with (outdir) replacing (searchdir)\n files must match filter pattern\n\n Example: %s ~/docs -o ~/docs_copy -f *.txt cp %%1 %%2" % (args[0],args[0],args[0]))
+            sys.exit("Decends a directory (searchdir) and performs an expression on all files in the directory. Will duplicate directory structure and filenames into optional output directory (outdir).\n\n Usage: python %s searchdir [-o outputdir] [-f \"filter\"] expression [...] %%1 [...] [%%2] \n %%1 is replaced by filenames in (searchdir)\n %%2 is %%1 with (outdir) replacing (searchdir)\n files must match filter pattern\n\n Example: python %s ~/docs -o ~/docs_copy -f \"*.txt\" cp %%1 %%2" % (args[0],args[0]))
+    if len(args)<3:
+        sys.exit("Usage: python %s searchdir [-o outputdir] [-f \"filter\"] expression [...] %%1 [...] [%%2]\n    %s -h' for help" % (args[0],args[0]))
 
     indir = os.path.abspath(args[1])
     outdir = None

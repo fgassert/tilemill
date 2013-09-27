@@ -7,14 +7,14 @@
   polygon-fill: @land;
   polygon-gamma: 0.25;
 }
-#10mlakes[zoom>3][ScaleRank<2],
-#10mlakes[zoom>4][ScaleRank=2],
-#10mlakes[zoom>5][ScaleRank=3],
-#10mlakes[zoom>6][ScaleRank=4],
-#10mlakes[zoom>7][ScaleRank=5],
-#10mlakes[zoom>8][ScaleRank=6],
-#10mlakes[zoom>9][ScaleRank=7],
-#10mlakes[zoom>10][ScaleRank>7],
+#10mlakes[zoom>2][ScaleRank<2],
+#10mlakes[zoom>3][ScaleRank<3],
+#10mlakes[zoom>4][ScaleRank<4],
+#10mlakes[zoom>5][ScaleRank<5],
+#10mlakes[zoom>6][ScaleRank<6],
+#10mlakes[zoom>7][ScaleRank<8],
+#10mlakes[zoom>8][ScaleRank<9],
+#10mlakes[zoom>9][ScaleRank>=9],
 {
   polygon-fill: @water;
   
@@ -49,10 +49,8 @@
 #admin1[SCALERANK=4][zoom>4],
 #admin1[SCALERANK=5][zoom>5],
 #admin1[SCALERANK=6][zoom>6],
-#admin1[SCALERANK=7][zoom>7],
-#admin1[SCALERANK=8][zoom>8],
-#admin1[SCALERANK=9][zoom>9],
-#admin1[SCALERANK=10][zoom>10] {
+#admin1[SCALERANK<=8][zoom>7],
+#admin1[SCALERANK<=10][zoom>8], {
   line-color:@admin;
   line-width:.7;
   line-dasharray: 5,3;

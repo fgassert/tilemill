@@ -21,8 +21,8 @@
 Map { font-directory: url(./fonts); }
 
 /* set up font sets for various weights and styles */
-@sans_lt:           "Arial MT Std Light Cond","DejaVu Sans Book","unifont Medium";
-@sans_bold:         "Arial MT Std Bold Cond","DejaVu Sans","unifont Medium";
+@sans_lt:           "Arial MT Std Light Cond","Arial Narrow Regular","DejaVu Sans Book","unifont Medium";
+@sans_bold:         "Arial MT Std Bold Cond","Arial Narrow Bold","DejaVu Sans","unifont Medium";
 @sans_wide:         "Arial Regular","DejaVu Sans","unifont Medium";
 @sans_bold_italic:  "Open Sans Italic","DejaVu Sans Italic","unifont Medium";
 
@@ -58,7 +58,7 @@ Map { font-directory: url(./fonts); }
 @country_text:      #eee;
 @country_halo:      @place_halo;
 
-@state_text:        #ddd;
+@state_text:        #d8d8d8;
 @state_halo:        @place_halo;
 
 @city_text:         #ddd;
