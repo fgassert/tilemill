@@ -6,18 +6,13 @@
         "mml": {
             "name":"Ua",
     	    "Layer": [
-        		{
-        		    "id": "raster",
-        		    "Datasource": {
-        			"file": "/Users/fgassert/Documents/WorkSync/Ua.tif",
-        			"band": "1"
-        		    }
-        		}
+        	{"id": "Ua", "status":"on"},
+        	{"id": "Ud", "status":"off"},
+        	{"id": "Ui", "status":"off"},
+        	{"id": "Ca", "status":"off"},
+        	{"id": "Cd", "status":"off"},
+		{"id": "Ci","status":"off"}
     	    ]
-        },
-        "cartoVars": {
-            "rastercolor": "#86c436",
-            "maxstop":50000
         }
     },
     {
@@ -27,39 +22,29 @@
         "mml": {
             "name":"Ud",
     	    "Layer": [
-    		{
-    		    "id": "raster",
-    		    "Datasource": {
-    			"file": "/Users/fgassert/Documents/WorkSync/Ud.tif",
-    			"band": "1"
-    		    }
-    		}
+        	{"id": "Ua", "status":"off"},
+        	{"id": "Ud", "status":"on"},
+        	{"id": "Ui", "status":"off"},
+        	{"id": "Ca", "status":"off"},
+        	{"id": "Cd", "status":"off"},
+		{"id": "Ci","status":"off"}
     	    ]
-        },
-        "cartoVars": {
-            "rastercolor": "#34b6f7",
-            "maxstop":50000
         }
     },
     {
         "source": "raster",
         "destination": "Ui",
-        "format": "mbtiles",
+        "format":"mbtiles",
         "mml": {
             "name":"Ui",
     	    "Layer": [
-    		{
-    		    "id": "raster",
-    		    "Datasource": {
-    			"file": "/Users/fgassert/Documents/WorkSync/Ui.tif",
-    			"band": "1"
-    		    }
-    		}
+        	{"id": "Ua", "status":"off"},
+        	{"id": "Ud", "status":"off"},
+        	{"id": "Ui", "status":"on"},
+        	{"id": "Ca", "status":"off"},
+        	{"id": "Cd", "status":"off"},
+		{"id": "Ci","status":"off"}
     	    ]
-        },
-        "cartoVars": {
-            "rastercolor": "#FC6DB6",
-	    "maxstop":50000
         }
     },
     {
@@ -67,87 +52,143 @@
         "destination": "Uad",
         "format":"mbtiles",
         "mml": {
-            "name":"Ua",
+            "name":"Uad",
     	    "Layer": [
-        		{
-        		    "id": "raster",
-        		    "Datasource": {
-        			"file": "/Users/fgassert/Documents/WorkSync/Ua.tif",
-        			"band": "1"
-        		    }
-                }
+        	{"id": "Ua", "status":"on"},
+        	{"id": "Ud", "status":"on"},
+        	{"id": "Ui", "status":"off"},
+        	{"id": "Ca", "status":"off"},
+        	{"id": "Cd", "status":"off"},
+		{"id": "Ci","status":"off"}
     	    ]
-        },
-        "cartoVars": {
-            "rastercolor": "#86c436",
-            "maxstop":50000
+        }
+    },
+    {
+        "source": "raster",
+        "destination": "Uai",
+        "format":"mbtiles",
+        "mml": {
+            "name":"Uai",
+    	    "Layer": [
+        	{"id": "Ua", "status":"on"},
+        	{"id": "Ud", "status":"off"},
+        	{"id": "Ui", "status":"on"},
+        	{"id": "Ca", "status":"off"},
+        	{"id": "Cd", "status":"off"},
+		{"id": "Ci","status":"off"}
+    	    ]
+        }
+    },
+    {
+        "source": "raster",
+        "destination": "Uadi",
+        "format":"mbtiles",
+        "mml": {
+            "name":"Uadi",
+    	    "Layer": [
+        	{"id": "Ua", "status":"on"},
+        	{"id": "Ud", "status":"on"},
+        	{"id": "Ui", "status":"on"},
+        	{"id": "Ca", "status":"off"},
+        	{"id": "Cd", "status":"off"},
+		{"id": "Ci","status":"off"}
+    	    ]
         }
     },
     {
         "source": "raster",
         "destination": "Ca",
-        "format": "mbtiles",
+        "format":"mbtiles",
         "mml": {
             "name":"Ca",
     	    "Layer": [
-    		{
-    		    "id": "raster",
-    		    "Datasource": {
-    			"file": "/Users/fgassert/Documents/WorkSync/Ca.tif",
-    			"band": "1"
-    		    }
-    		}
+        	{"id": "Ua", "status":"off"},
+        	{"id": "Ud", "status":"off"},
+        	{"id": "Ui", "status":"off"},
+        	{"id": "Ca", "status":"on"},
+        	{"id": "Cd", "status":"off"},
+		{"id": "Ci","status":"off"}
     	    ]
-        },
-        "cartoVars": {
-            "rastercolor": "#86c436",
-	        "maxstop":50000
         }
     },
-
     {
         "source": "raster",
         "destination": "Cd",
-        "format": "mbtiles",
+        "format":"mbtiles",
         "mml": {
             "name":"Cd",
     	    "Layer": [
-        		{
-    		    "id": "raster",
-    		    "Datasource": {
-    			"file": "/Users/fgassert/Documents/WorkSync/Cd.tif",
-    			"band": "1"
-    		    }
-                }
+        	{"id": "Ua", "status":"off"},
+        	{"id": "Ud", "status":"off"},
+        	{"id": "Ui", "status":"off"},
+        	{"id": "Ca", "status":"off"},
+        	{"id": "Cd", "status":"on"},
+		{"id": "Ci","status":"off"}
     	    ]
-        },
-        "cartoVars": {
-            "rastercolor": "#34b6f7",
-	        "maxstop":50000
         }
     },
-
     {
         "source": "raster",
         "destination": "Ci",
-        "format": "mbtiles",
-        "minzoom": 0,
-        "maxzoom": 5,
+        "format":"mbtiles",
         "mml": {
             "name":"Ci",
     	    "Layer": [
-        		{
-        		    "id": "raster",
-        		    "Datasource": {
-        			"file": "/Users/fgassert/Documents/WorkSync/Ci.tif",
-        			"band": "1"
-        		    }
-        		}
+        	{"id": "Ua", "status":"off"},
+        	{"id": "Ud", "status":"off"},
+        	{"id": "Ui", "status":"off"},
+        	{"id": "Ca", "status":"off"},
+        	{"id": "Cd", "status":"off"},
+		{"id": "Ci","status":"on"}
     	    ]
-        },
-        "cartoVars": {
-            "rastercolor": "#FC6DB6",
-	        "maxstop":50000
+        }
+    },
+    {
+        "source": "raster",
+        "destination": "Cad",
+        "format":"mbtiles",
+        "mml": {
+            "name":"Cad",
+    	    "Layer": [
+        	{"id": "Ua", "status":"off"},
+        	{"id": "Ud", "status":"off"},
+        	{"id": "Ui", "status":"off"},
+        	{"id": "Ca", "status":"on"},
+        	{"id": "Cd", "status":"on"},
+		{"id": "Ci","status":"off"}
+    	    ]
+        }
+    },
+    {
+        "source": "raster",
+        "destination": "Cai",
+        "format":"mbtiles",
+        "mml": {
+            "name":"Cai",
+    	    "Layer": [
+        	{"id": "Ua", "status":"off"},
+        	{"id": "Ud", "status":"off"},
+        	{"id": "Ui", "status":"off"},
+        	{"id": "Ca", "status":"on"},
+        	{"id": "Cd", "status":"off"},
+		{"id": "Ci","status":"on"}
+    	    ]
+        }
+    },
+    {
+        "source": "raster",
+        "destination": "Cadi",
+        "format":"mbtiles",
+        "mml": {
+            "name":"Cadi",
+    	    "Layer": [
+        	{"id": "Ua", "status":"off"},
+        	{"id": "Ud", "status":"off"},
+        	{"id": "Ui", "status":"off"},
+        	{"id": "Ca", "status":"on"},
+        	{"id": "Cd", "status":"on"},
+		{"id": "Ci","status":"on"}
+    	    ]
         }
     }
 ]

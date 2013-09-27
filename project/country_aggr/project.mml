@@ -1,9 +1,9 @@
 {
   "bounds": [
     -180,
-    -85.05112877980659,
+    -85.0511,
     180,
-    85.05112877980659
+    85.0511
   ],
   "center": [
     0,
@@ -13,25 +13,70 @@
   "format": "png8",
   "interactivity": false,
   "minzoom": 0,
-  "maxzoom": 22,
+  "maxzoom": 8,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
     "style.mss"
   ],
   "Layer": [
     {
-      "id": "countries",
-      "name": "countries",
-      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "geometry": "polygon",
+      "extent": [
+        -127.78333333296679,
+        -41.49999999970021,
+        152.48333333326684,
+        61.958333333416654
+      ],
+      "id": "basinsarea100",
+      "class": "",
       "Datasource": {
-        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
-        "type": "shape"
-      }
+        "file": "/Users/fgassert/Documents/GIS/shps/basins_area100.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "basinsarea100"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -123.75833333291689,
+        -34.6166666669331,
+        141.11666666653366,
+        61.958333333416654
+      ],
+      "id": "basinspop100",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/fgassert/Documents/GIS/shps/basins_pop100.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "basinspop100"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99978348919956,
+        -59.472802836517815,
+        180,
+        83.63381093402971
+      ],
+      "id": "country20130819",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/fgassert/Documents/GIS/shps/country_20130819.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "country20130819"
     }
   ],
   "scale": 1,
   "metatile": 2,
   "name": "Aqueduct Country Indicators",
-  "description": ""
+  "description": "",
+  "attribution": ""
 }

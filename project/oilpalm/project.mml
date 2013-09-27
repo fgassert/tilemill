@@ -1,0 +1,532 @@
+{
+  "bounds": [
+    -180,
+    -85.0511,
+    180,
+    85.0511
+  ],
+  "center": [
+    0,
+    0,
+    2
+  ],
+  "format": "png24",
+  "interactivity": false,
+  "minzoom": 0,
+  "maxzoom": 6,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "raster",
+      "extent": [
+        -179.9999885408441,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "none",
+      "class": "raster",
+      "Datasource": {
+        "file": "/Users/fgassert/Documents/GIS/geotiff/maize_yield.tif",
+        "band": "1"
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "none",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -179.9999885408441,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "cocoa",
+      "class": "raster",
+      "Datasource": {
+        "file": "/Users/fgassert/Documents/GIS/geotiff/cocoa_yield.tif",
+        "band": 1
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "cocoa",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -179.9999885408441,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "coffee",
+      "class": "raster",
+      "Datasource": {
+        "file": "/Users/fgassert/Documents/GIS/geotiff/coffee_yield.tif",
+        "band": 1
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "coffee",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -179.9999885408441,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "cotton",
+      "class": "raster",
+      "Datasource": {
+        "file": "/Users/fgassert/Documents/GIS/geotiff/cotton_yield.tif",
+        "band": 1
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "cotton",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -179.9999885408441,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "G_Cereals",
+      "class": "raster",
+      "Datasource": {
+        "file": "/Users/fgassert/Documents/GIS/geotiff/G_Cereals_yield.tif",
+        "band": 1
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "G_Cereals",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -179.9999885408441,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "G_Fiber",
+      "class": "raster",
+      "Datasource": {
+        "file": "/Users/fgassert/Documents/GIS/geotiff/G_Fiber_yield.tif",
+        "band": 1
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "G_Fiber",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -179.9999885408441,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "G_Forage",
+      "class": "raster",
+      "Datasource": {
+        "file": "/Users/fgassert/Documents/GIS/geotiff/G_Forage_yield.tif",
+        "band": 1
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "G_Forage",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -179.9999885408441,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "G_Fruit",
+      "class": "raster",
+      "Datasource": {
+        "file": "/Users/fgassert/Documents/GIS/geotiff/G_Fruit_yield.tif",
+        "band": 1
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "G_Fruit",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -179.9999885408441,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "G_Oilcrops",
+      "class": "raster",
+      "Datasource": {
+        "file": "/Users/fgassert/Documents/GIS/geotiff/G_Oilcrops_yield.tif",
+        "band": 1
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "G_Oilcrops",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -179.9999885408441,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "G_Pulses",
+      "class": "raster",
+      "Datasource": {
+        "file": "/Users/fgassert/Documents/GIS/geotiff/G_Pulses_yield.tif",
+        "band": 1
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "G_Pulses",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -179.9999885408441,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "G_RootsTubers",
+      "class": "raster",
+      "Datasource": {
+        "file": "/Users/fgassert/Documents/GIS/geotiff/G_RootsTubers_yield.tif",
+        "band": 1
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "G_RootsTubers",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -179.9999885408441,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "G_Treenuts",
+      "class": "raster",
+      "Datasource": {
+        "file": "/Users/fgassert/Documents/GIS/geotiff/G_Treenuts_yield.tif",
+        "band": 1
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "G_Treenuts",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -179.9999885408441,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "maize",
+      "class": "raster",
+      "Datasource": {
+        "file": "/Users/fgassert/Documents/GIS/geotiff/maize_yield.tif",
+        "band": 1
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "maize",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -179.9999885408441,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "maizefor",
+      "class": "raster",
+      "Datasource": {
+        "file": "/Users/fgassert/Documents/GIS/geotiff/maizefor_yield.tif",
+        "band": 1
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "maizefor",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -179.9999885408441,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "oats",
+      "class": "raster",
+      "Datasource": {
+        "file": "/Users/fgassert/Documents/GIS/geotiff/oats_yield.tif",
+        "band": 1
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "oats",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -179.9999885408441,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "oilpalm",
+      "class": "raster",
+      "Datasource": {
+        "file": "/Users/fgassert/Documents/GIS/geotiff/oilpalm_yield.tif",
+        "band": 1
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "oilpalm",
+      "status": "on"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -179.9999885408441,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "orange",
+      "class": "raster",
+      "Datasource": {
+        "file": "/Users/fgassert/Documents/GIS/geotiff/orange_yield.tif",
+        "band": 1
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "orange",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -179.9999885408441,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "rapeseed",
+      "class": "raster",
+      "Datasource": {
+        "file": "/Users/fgassert/Documents/GIS/geotiff/rapeseed_yield.tif",
+        "band": 1
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "rapeseed",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -179.9999885408441,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "rice",
+      "class": "raster",
+      "Datasource": {
+        "file": "/Users/fgassert/Documents/GIS/geotiff/rice_yield.tif",
+        "band": 1
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "rice",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -179.9999885408441,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "rubber",
+      "class": "raster",
+      "Datasource": {
+        "file": "/Users/fgassert/Documents/GIS/geotiff/rubber_yield.tif",
+        "band": 1
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "rubber",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -179.9999885408441,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "soybean",
+      "class": "raster",
+      "Datasource": {
+        "file": "/Users/fgassert/Documents/GIS/geotiff/soybean_yield.tif",
+        "band": 1
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "soybean",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -179.9999885408441,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "sugarcane",
+      "class": "raster",
+      "Datasource": {
+        "file": "/Users/fgassert/Documents/GIS/geotiff/sugarcane_yield.tif",
+        "band": 1
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "sugarcane",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -179.9999885408441,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "wheat",
+      "class": "raster",
+      "Datasource": {
+        "file": "/Users/fgassert/Documents/GIS/geotiff/wheat_yield.tif",
+        "band": 1
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "wheat",
+      "status": "off"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "oilpalm",
+  "description": "",
+  "attribution": ""
+}

@@ -21,8 +21,11 @@ Map {
 
 #admin0_label[zoom>2][zoom<9][LabelRank<=2],
 #admin0_label[zoom>3][zoom<9][LabelRank>2][LabelRank<=4]
+#admin0_label2[zoom>4][zoom<10][LabelRank>4][LabelRank<=6],
+#admin0_label2[zoom>5][zoom<11][LabelRank>6][LabelRank<=8],
+#admin0_label2[zoom>6][zoom<11][LabelRank>8][LabelRank<=10]
 { 
-  [TYPE="Country"],[TYPE="Sovereign country"] {
+  [TYPE="Sovereign country"],[TYPE="Country"] {
   text-name:'[ADMIN]';
   text-face-name:@sans_lt;
   text-placement:point;
@@ -83,11 +86,11 @@ Map {
   }
 }
 
-#admin0_label2[zoom>4][zoom<10][LabelRank>4][LabelRank<=6],
+#admin0_label2[zoom>4][zoom<10][LabelRank<=6],
 #admin0_label2[zoom>5][zoom<11][LabelRank>6][LabelRank<=8],
 #admin0_label2[zoom>6][zoom<11][LabelRank>8][LabelRank<=10]
 { 
-  [TYPE="Country"],[TYPE="Sovereign country"] {
+  [TYPE="Country"] {
   text-name:'[ADMIN]';
   text-face-name:@sans_lt;
   text-placement:point;
@@ -97,18 +100,18 @@ Map {
   text-character-spacing:1;
   text-min-distance: 10;
   [zoom=4] {
-    text-size:15;
+    text-size:14;
     text-wrap-width: 60;
   }
   [zoom=5] {
-    text-size:16;
+    text-size:15;
     text-wrap-width: 70;
     text-halo-radius: 2;
     text-character-spacing: 2;
     text-transform: uppercase;
   }
   [zoom=6] {
-    text-size:20;
+    text-size:18;
     text-character-spacing: 4;
     text-wrap-width: 120;
     text-opacity:.6;
@@ -126,17 +129,17 @@ Map {
     text-transform: uppercase;
   }
   [zoom=7] {
-    text-size:24;
+    text-size:22;
     text-character-spacing: 6;
     text-wrap-width: 150;
   }
   [zoom=8] {
-    text-size:29;
+    text-size:26;
     text-character-spacing: 8;
     text-wrap-width: 180;
   }
   [zoom>=9] {
-    text-size:35;
+    text-size:31;
     text-character-spacing: 8;
     text-wrap-width: 200;
   }

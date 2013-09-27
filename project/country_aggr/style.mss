@@ -2,11 +2,27 @@ Map {
   background-color: #b8dee6;
 }
 
-#countries {
-  ::outline {
-    line-color: #85c5d3;
-    line-width: 2;
-    line-join: round;
-  }
-  polygon-fill: #fff;
+
+
+#basinsarea100 {
+  line-color:#594;
+  line-width:0.5;
+  polygon-opacity:1;
+  polygon-fill:#ae8;
+}
+
+
+#basinspop100 {
+  line-color:#594;
+  line-width:0.5;
+  polygon-opacity:1;
+  polygon-fill:#ae8;
+}
+
+
+#country20130819 {
+  line-color:#594;
+  line-width:0.5;
+  polygon-opacity:1;
+  polygon-fill:#ae8;
 }
