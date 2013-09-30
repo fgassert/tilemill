@@ -1,65 +1,101 @@
+#!/usr/bin/python
+
 import os
 import sys
 import subprocess
 import string
 import fnmatch
 
-SHORTCUTS = {
-    "s_echo":["echo","%1"],
-    "invert":["convert","%1","-negate","%2"]
-}
-
-def tree(indir, func, pattern="*"):
+def tree(indir, func, pattern, max_level, l=0):
+    if l>max_level:
+        return
     d = os.listdir(indir)
     for f in d:
         ff = os.path.join(indir,f)
         if os.path.isdir(ff):
-            tree(ff, func, pattern)
+            tree(ff, func, pattern, max_level, l+1)
         elif fnmatch.fnmatch(f,pattern):
             func(ff)
 
 def check_mkdir(path):
     p = os.path.dirname(path)
-    if not os.path.exists(p):
+    if not os.path.exists(p) and len(p)>0:
         check_mkdir(p)
-        os.mkdir(p)
+        try:
+            os.mkdir(p)
+        except:
+            pass
 
 def main():
     args = sys.argv[:]
     if len(args)>1:
         if args[1]=="-h":
-            sys.exit("Decends a directory (searchdir) and performs an expression on all files in the directory. Will duplicate directory structure and filenames into optional output directory (outdir).\n\n Usage: python %s searchdir [-o outputdir] [-f \"filter\"] expression [...] %%1 [...] [%%2] \n %%1 is replaced by filenames in (searchdir)\n %%2 is %%1 with (outdir) replacing (searchdir)\n files must match filter pattern\n\n Example: python %s ~/docs -o ~/docs_copy -f \"*.txt\" cp %%1 %%2" % (args[0],args[0]))
+            sys.exit("Descend utility\n\nDecends a directory and executes a command on all files in the directory. Will duplicate directory structure and filenames into optional output directory <outdir>.\n\nUsage:\n\n %s <searchdir> [-o <outdir>] [<options>] <command. [...] %%1 [...] [%%2]\n\n %%1 is replaced by filenames in <searchdir>\n %%2 is %%1 with <outdir> replacing <searchdir>\n\nOptions:\n\n -o <outdir>   Optional directory for %%2 parameter. Will attempt to duplicate directory structure of <searchdir>.\n\n -f <filter>   Files must match filter pattern (e.g. *.txt)\n\n -l [1-999]    Maximum levels to descend (default 999)\n\n -t [1-256]    Maximum number of concurrent child processes (default 8)\n\nExample:\n\n %s ~/docs -o ~/docs_copy -f \"*.txt\" cp %%1 %%2\n" % (args[0],args[0]))
     if len(args)<3:
-        sys.exit("Usage: python %s searchdir [-o outputdir] [-f \"filter\"] expression [...] %%1 [...] [%%2]\n    %s -h' for help" % (args[0],args[0]))
+        sys.exit("Usage: %s <searchdir> [-o <outdir>] [<options>] <command> [...] %%1 [...] [%%2]\n    %s -h' for help" % (args[0],args[0]))
 
-    indir = os.path.abspath(args[1])
+    indir = args[1]
+    if indir[-1] not in ("/","\\"):
+        indir = "%s/" % indir
     outdir = None
     pattern = "*"
+    max_level = 999
+    max_children = 8
+    children = []
 
-    for o in ["-o","-f"]:
+    for o in ["-o","-f","-l","-t"]:
         if args[2] == "-o":
             args.pop(2)
-            outdir = os.path.abspath(args.pop(2))
+            outdir = args.pop(2)
         elif args[2] == "-f":
             args.pop(2)
             pattern = args.pop(2)
+        elif args[2] == "-l":
+            args.pop(2)
+            try:
+                max_level = int(args.pop(2))
+                assert max_level>0
+            except:
+                sys.exit("Max level must be an integer (1-999)")
+        elif args[2] == "-t":
+            args.pop(2)
+            try:
+                max_level = int(args.pop(2))
+                assert max_children>0 and max_children<256
+            except:
+                sys.exit("Max children must be an integer (1-256)")
 
-    if args[2] in SHORTCUTS.keys():
-        eargs = SHORTCUTS[args[2]]
-    else:
-        eargs = args[2:]
+    eargs = args[2:]
 
     def worker(f):
         d={'%1':f}
         if outdir is not None:
-            o = string.replace(f,indir,outdir,1)
+            o = string.replace(f,indir,"",1)
+            o = os.path.join(outdir,o)
             check_mkdir(o)
-            d['%2']=o
-        pargs = [d[a] if a in d.keys() else a for a in eargs]
-        subprocess.Popen(pargs,stderr=subprocess.STDOUT)
-    
-    tree(indir, worker, pattern)
+            d['%2'] = o
+        pargs = []
+        for a in eargs:
+            for k in d.keys():
+                a = string.replace(a,k,d[k])
+            pargs.append(a)
 
+        if len(pargs)==1:
+            p = subprocess.Popen(pargs[0],stderr=subprocess.STDOUT,shell=True)
+        else:
+            p = subprocess.Popen(pargs,stderr=subprocess.STDOUT)
+
+        children.append(p)
+        if len(children) >= max_children:
+            for t in children:
+                if t.poll() is not None:
+                    children.remove(t)
+            if len(children) >= max_children:
+                children[0].wait()
+    
+    tree(indir, worker, pattern, max_level)
+    for t in children:
+        t.wait()
 
 
 if __name__ == "__main__":
