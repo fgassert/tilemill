@@ -587,12 +587,12 @@
         "band": "1"
       },
       "name": "G_SugarCrops",
-      "status": "off"
+      "status": "on"
     }
   ],
   "scale": 1,
   "metatile": 2,
-  "name": "crops",
+  "name": "G_SugarCrops",
   "description": "",
   "attribution": ""
 }

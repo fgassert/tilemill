@@ -5,30 +5,31 @@ Map {
 @maxstop: 11.51;
 @a: #fff;
 @ba: fadeout(@a, 100%);
-@cocoa: 0.82;
-@coffee: 1.23;
-@cotton: 2.62;
-@G_Cereals: 4.64;
-@G_Fiber: 2.3;
-@G_Forage: 27.89;
-@G_Fruit: 16.24;
-@G_Oilcrops: 4.42;
-@G_Pulses: 2.12;
-@G_RootsTubers: 25.85;
-@G_Treenuts: 3.4;
-@maize: 6.19;
-@maizefor: 38.83;
-@oats: 3.01;
-@oilpalm: 17.44;
-@orange: 19.2;
-@rapeseed: 2;
-@rice: 5.31;
-@rubber: 1.42;
-@soybean: 2.34;
-@sugarcane: 87.06;
-@wheat: 4.09;
-@gmia:33;
-@cropland:.4;
+@cocoa:103.208152919112;
+@coffee:115.530972470441;
+@cotton:617.862083968752;
+@G_Cereals:6936.35125875936;
+@G_Fiber:448.695484490374;
+@G_Forage:11063.1525633752;
+@G_Fruit:2098.60906360313;
+@G_Oilcrops:2270.25682770869;
+@G_Pulses:214.97966510094;
+@G_RootsTubers:3103.66878929067;
+@G_SugarCrops:15363.6494218762;
+@G_Treenuts:63.160943105318;
+@maize:3482.40199447642;
+@maizefor:3729.20962648936;
+@oats:188.400080122274;
+@oilpalm:3219.02435616613;
+@orange:1318.44760540565;
+@rapeseed:335.912603812233;
+@rice:4765.45468947681;
+@rubber:116.99764492626;
+@soybean:1381.51957564684;
+@sugarcane:19886.8024229297;
+@wheat:2847.24747560912;
+@cropland:3000;
+@gmia:1500;
 
 
 .raster {
@@ -160,4 +161,9 @@ Map {
   raster-colorizer-stops:
     stop(0,@ba)
     stop(@cropland,@a)
+}
+#G_SugarCrops {
+  raster-colorizer-stops:
+    stop(0,@ba)
+    stop(@G_SugarCrops,@a)
 }

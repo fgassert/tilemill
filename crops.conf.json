@@ -794,5 +794,41 @@
                 {"status":"on"}
             ]
         }
+    },
+{
+     	"source": "crops",
+	"destination": "G_SugarCrops",
+	"format":"mbtiles",
+	"mml": {
+            "name":"G_SugarCrops",
+            "Layer": [
+		        {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"on"}
+            ]
+        }
     }
 ]
