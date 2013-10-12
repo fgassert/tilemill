@@ -5,6 +5,8 @@ import sys
 import subprocess
 import string
 import fnmatch
+import time
+SLEEPTIME = (0.05)
 
 def tree(indir, func, pattern, max_level, l=0):
     if l>max_level:
@@ -26,13 +28,12 @@ def check_mkdir(path):
         except:
             pass
 
-def main():
-    args = sys.argv[:]
+def descend(args, arg0="descend"):
     if len(args)>1:
         if args[1]=="-h":
-            sys.exit("Descend utility\n\nDecends a directory and executes a command on all files in the directory. Will duplicate directory structure and filenames into optional output directory <outdir>.\n\nUsage:\n\n %s <searchdir> [-o <outdir>] [<options>] <command. [...] %%1 [...] [%%2]\n\n %%1 is replaced by filenames in <searchdir>\n %%2 is %%1 with <outdir> replacing <searchdir>\n\nOptions:\n\n -o <outdir>   Optional directory for %%2 parameter. Will attempt to duplicate directory structure of <searchdir>.\n\n -f <filter>   Files must match filter pattern (e.g. *.txt)\n\n -l [1-999]    Maximum levels to descend (default 999)\n\n -t [1-256]    Maximum number of concurrent child processes (default 8)\n\nExample:\n\n %s ~/docs -o ~/docs_copy -f \"*.txt\" cp %%1 %%2\n" % (args[0],args[0]))
+            sys.exit("Descend utility\n\nDecends a directory and executes a command on all files in the directory. Will duplicate directory structure and filenames into optional output directory <outdir>.\n\nUsage:\n\n %s <searchdir> [-o <outdir>] [<options>] <command. [...] %%1 [...] [%%2]\n\n %%1 is replaced by filenames in <searchdir>\n %%2 is %%1 with <outdir> replacing <searchdir>\n\nOptions:\n\n -o <outdir>   Optional directory for %%2 parameter. Will attempt to duplicate directory structure of <searchdir>.\n\n -f <filter>   Files must match filter pattern (e.g. *.txt)\n\n -l [1-999]    Maximum levels to descend (default 999)\n\n -t [1-256]    Maximum number of concurrent child processes (default 8)\n\nExample:\n\n %s ~/docs -o ~/docs_copy -f \"*.txt\" cp %%1 %%2\n" % (arg0,arg0))
     if len(args)<3:
-        sys.exit("Usage: %s <searchdir> [-o <outdir>] [<options>] <command> [...] %%1 [...] [%%2]\n    %s -h' for help" % (args[0],args[0]))
+        sys.exit("Usage: %s <searchdir> [-o <outdir>] [<options>] <command> [...] %%1 [...] [%%2]\n    %s -h' for help" % (arg0,arg0))
 
     indir = args[1]
     if indir[-1] not in ("/","\\"):
@@ -86,12 +87,11 @@ def main():
             p = subprocess.Popen(pargs,stderr=subprocess.STDOUT)
 
         children.append(p)
-        if len(children) >= max_children:
+        while len(children) >= max_children:
             for t in children:
                 if t.poll() is not None:
                     children.remove(t)
-            if len(children) >= max_children:
-                children[0].wait()
+            time.sleep(SLEEPTIME)
     
     tree(indir, worker, pattern, max_level)
     for t in children:
@@ -99,4 +99,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    descend(sys.argv[1:],sys.argv[0])
