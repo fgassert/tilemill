@@ -27,6 +27,8 @@ Map {
 @soybean: 2.34;
 @sugarcane: 87.06;
 @wheat: 4.09;
+@gmia:33;
+@cropland:.4;
 
 
 .raster {
@@ -148,4 +150,14 @@ Map {
   raster-colorizer-stops:
     stop(0,@ba)
     stop(@wheat,@a)
+}
+#gmia {
+  raster-colorizer-stops:
+    stop(0,@ba)
+    stop(@gmia,@a)
+}
+#cropland {
+  raster-colorizer-stops:
+    stop(0,@ba)
+    stop(@cropland,@a)
 }

@@ -98,19 +98,23 @@ Map {
   text-character-spacing:1;
   text-min-distance: 10;
   [zoom=4] {
-    text-size:13;
+    text-size:12;
     text-wrap-width: 60;
   }
   [zoom=5] {
+    text-size:13;
+    text-wrap-width: 60;
+  }
+  [zoom=6] {
     text-size:14;
     text-wrap-width: 70;
     text-character-spacing: 1.5;
+    text-opacity:.6;
     text-transform: uppercase;
   }
-  [zoom=6] {
+  [zoom=7] {
     text-size:16;
     text-wrap-width: 120;
-    text-opacity:.6;
     text-min-distance: 30;
     text-halo-radius: 2;
     text-character-spacing: 2;
@@ -123,17 +127,17 @@ Map {
     text-min-distance: 30;
     text-transform: uppercase;
   }
-  [zoom=7] {
+  [zoom=8] {
     text-size:20;
     text-character-spacing: 4;
     text-wrap-width: 150;
   }
-  [zoom=8] {
+  [zoom=9] {
     text-size:24;
     text-character-spacing: 6;
     text-wrap-width: 180;
   }
-  [zoom>=9] {
+  [zoom>=10] {
     text-size:29;
     text-character-spacing: 8;
     text-wrap-width: 200;

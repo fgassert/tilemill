@@ -455,7 +455,7 @@
         "band": "1"
       },
       "name": "rubber",
-      "status": "on"
+      "status": "off"
     },
     {
       "geometry": "raster",
@@ -543,7 +543,7 @@
         "band": "1"
       },
       "name": "gmia",
-      "status": "off"
+      "status": "on"
     },
     {
       "geometry": "raster",
@@ -570,7 +570,7 @@
   ],
   "scale": 1,
   "metatile": 2,
-  "name": "rubber",
+  "name": "gmia",
   "description": "",
   "attribution": ""
 }

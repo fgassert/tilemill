@@ -3,7 +3,7 @@ import gdal
 import csv
 
 DIR = "/Users/fgassert/Documents/GIS/geotiff/"
-OUT = "/Users/fgassert/Documents/GIS/ras_stats.csv"
+OUT = "/Users/fgassert/Documents/GIS/ras_stats2.csv"
 
 def main():
     dirlist = os.listdir(DIR)
@@ -11,7 +11,7 @@ def main():
     statlist = []
 
     for z in dirlist:
-        if z[-6:]=="ld.tif":
+        if z[-4:]==".tif":
             d = gdal.Open(os.path.join(DIR,z))
             s = d.GetRasterBand(1).GetStatistics(0,1)
             s.append(s[2]+2*s[3])

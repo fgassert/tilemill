@@ -52,7 +52,7 @@
       "id": "cocoa",
       "class": "raster",
       "Datasource": {
-        "file": "/Users/fgassert/Documents/GIS/geotiff/cocoa_yield.tif",
+        "file": "/Users/fgassert/Documents/GIS/geotiff/cocoa_yh.tif",
         "band": 1
       },
       "srs-name": "900913",
@@ -74,7 +74,7 @@
       "id": "coffee",
       "class": "raster",
       "Datasource": {
-        "file": "/Users/fgassert/Documents/GIS/geotiff/coffee_yield.tif",
+        "file": "/Users/fgassert/Documents/GIS/geotiff/coffee_yh.tif",
         "band": 1
       },
       "srs-name": "900913",
@@ -96,7 +96,7 @@
       "id": "cotton",
       "class": "raster",
       "Datasource": {
-        "file": "/Users/fgassert/Documents/GIS/geotiff/cotton_yield.tif",
+        "file": "/Users/fgassert/Documents/GIS/geotiff/cotton_yh.tif",
         "band": 1
       },
       "srs-name": "900913",
@@ -118,7 +118,7 @@
       "id": "G_Cereals",
       "class": "raster",
       "Datasource": {
-        "file": "/Users/fgassert/Documents/GIS/geotiff/G_Cereals_yield.tif",
+        "file": "/Users/fgassert/Documents/GIS/geotiff/G_Cereals_yh.tif",
         "band": 1
       },
       "srs-name": "900913",
@@ -140,7 +140,7 @@
       "id": "G_Fiber",
       "class": "raster",
       "Datasource": {
-        "file": "/Users/fgassert/Documents/GIS/geotiff/G_Fiber_yield.tif",
+        "file": "/Users/fgassert/Documents/GIS/geotiff/G_Fiber_yh.tif",
         "band": 1
       },
       "srs-name": "900913",
@@ -162,7 +162,7 @@
       "id": "G_Forage",
       "class": "raster",
       "Datasource": {
-        "file": "/Users/fgassert/Documents/GIS/geotiff/G_Forage_yield.tif",
+        "file": "/Users/fgassert/Documents/GIS/geotiff/G_Forage_yh.tif",
         "band": 1
       },
       "srs-name": "900913",
@@ -184,7 +184,7 @@
       "id": "G_Fruit",
       "class": "raster",
       "Datasource": {
-        "file": "/Users/fgassert/Documents/GIS/geotiff/G_Fruit_yield.tif",
+        "file": "/Users/fgassert/Documents/GIS/geotiff/G_Fruit_yh.tif",
         "band": 1
       },
       "srs-name": "900913",
@@ -206,7 +206,7 @@
       "id": "G_Oilcrops",
       "class": "raster",
       "Datasource": {
-        "file": "/Users/fgassert/Documents/GIS/geotiff/G_Oilcrops_yield.tif",
+        "file": "/Users/fgassert/Documents/GIS/geotiff/G_Oilcrops_yh.tif",
         "band": 1
       },
       "srs-name": "900913",
@@ -228,7 +228,7 @@
       "id": "G_Pulses",
       "class": "raster",
       "Datasource": {
-        "file": "/Users/fgassert/Documents/GIS/geotiff/G_Pulses_yield.tif",
+        "file": "/Users/fgassert/Documents/GIS/geotiff/G_Pulses_yh.tif",
         "band": 1
       },
       "srs-name": "900913",
@@ -250,7 +250,7 @@
       "id": "G_RootsTubers",
       "class": "raster",
       "Datasource": {
-        "file": "/Users/fgassert/Documents/GIS/geotiff/G_RootsTubers_yield.tif",
+        "file": "/Users/fgassert/Documents/GIS/geotiff/G_RootsTubers_yh.tif",
         "band": 1
       },
       "srs-name": "900913",
@@ -272,7 +272,7 @@
       "id": "G_Treenuts",
       "class": "raster",
       "Datasource": {
-        "file": "/Users/fgassert/Documents/GIS/geotiff/G_Treenuts_yield.tif",
+        "file": "/Users/fgassert/Documents/GIS/geotiff/G_Treenuts_yh.tif",
         "band": 1
       },
       "srs-name": "900913",
@@ -294,7 +294,7 @@
       "id": "maize",
       "class": "raster",
       "Datasource": {
-        "file": "/Users/fgassert/Documents/GIS/geotiff/maize_yield.tif",
+        "file": "/Users/fgassert/Documents/GIS/geotiff/maize_yh.tif",
         "band": 1
       },
       "srs-name": "900913",
@@ -314,7 +314,7 @@
       "id": "maizefor",
       "class": "raster",
       "Datasource": {
-        "file": "/Users/fgassert/Documents/GIS/geotiff/maizefor_yield.tif",
+        "file": "/Users/fgassert/Documents/GIS/geotiff/maizefor_yh.tif",
         "band": 1
       },
       "srs-name": "900913",
@@ -336,7 +336,7 @@
       "id": "oats",
       "class": "raster",
       "Datasource": {
-        "file": "/Users/fgassert/Documents/GIS/geotiff/oats_yield.tif",
+        "file": "/Users/fgassert/Documents/GIS/geotiff/oats_yh.tif",
         "band": 1
       },
       "srs-name": "900913",
@@ -358,7 +358,7 @@
       "id": "oilpalm",
       "class": "raster",
       "Datasource": {
-        "file": "/Users/fgassert/Documents/GIS/geotiff/oilpalm_yield.tif",
+        "file": "/Users/fgassert/Documents/GIS/geotiff/oilpalm_yh.tif",
         "band": 1
       },
       "srs-name": "900913",
@@ -380,7 +380,7 @@
       "id": "orange",
       "class": "raster",
       "Datasource": {
-        "file": "/Users/fgassert/Documents/GIS/geotiff/orange_yield.tif",
+        "file": "/Users/fgassert/Documents/GIS/geotiff/orange_yh.tif",
         "band": 1
       },
       "srs-name": "900913",
@@ -402,7 +402,7 @@
       "id": "rapeseed",
       "class": "raster",
       "Datasource": {
-        "file": "/Users/fgassert/Documents/GIS/geotiff/rapeseed_yield.tif",
+        "file": "/Users/fgassert/Documents/GIS/geotiff/rapeseed_yh.tif",
         "band": 1
       },
       "srs-name": "900913",
@@ -424,7 +424,7 @@
       "id": "rice",
       "class": "raster",
       "Datasource": {
-        "file": "/Users/fgassert/Documents/GIS/geotiff/rice_yield.tif",
+        "file": "/Users/fgassert/Documents/GIS/geotiff/rice_yh.tif",
         "band": 1
       },
       "srs-name": "900913",
@@ -446,7 +446,7 @@
       "id": "rubber",
       "class": "raster",
       "Datasource": {
-        "file": "/Users/fgassert/Documents/GIS/geotiff/rubber_yield.tif",
+        "file": "/Users/fgassert/Documents/GIS/geotiff/rubber_yh.tif",
         "band": 1
       },
       "srs-name": "900913",
@@ -468,7 +468,7 @@
       "id": "soybean",
       "class": "raster",
       "Datasource": {
-        "file": "/Users/fgassert/Documents/GIS/geotiff/soybean_yield.tif",
+        "file": "/Users/fgassert/Documents/GIS/geotiff/soybean_yh.tif",
         "band": 1
       },
       "srs-name": "900913",
@@ -490,7 +490,7 @@
       "id": "sugarcane",
       "class": "raster",
       "Datasource": {
-        "file": "/Users/fgassert/Documents/GIS/geotiff/sugarcane_yield.tif",
+        "file": "/Users/fgassert/Documents/GIS/geotiff/sugarcane_yh.tif",
         "band": 1
       },
       "srs-name": "900913",
@@ -512,7 +512,7 @@
       "id": "wheat",
       "class": "raster",
       "Datasource": {
-        "file": "/Users/fgassert/Documents/GIS/geotiff/wheat_yield.tif",
+        "file": "/Users/fgassert/Documents/GIS/geotiff/wheat_yh.tif",
         "band": 1
       },
       "srs-name": "900913",
@@ -522,6 +522,50 @@
       },
       "name": "wheat",
       "status": "on"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -179.9999885408441,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "gmia",
+      "class": "raster",
+      "Datasource": {
+        "file": "/Users/fgassert/Documents/GIS/geotiff/gmia_v5_aei_ha.tif",
+        "band": 1
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "gmia",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -179.9999885408441,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "cropland",
+      "class": "raster",
+      "Datasource": {
+        "file": "/Users/fgassert/Documents/GIS/geotiff/cropland_ha.tif",
+        "band": 1
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "cropland",
+      "status": "off"
     }
   ],
   "scale": 1,

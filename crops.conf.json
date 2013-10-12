@@ -724,5 +724,75 @@
                 {"status":"on"}
             ]
         }
+    },
+{
+     	"source": "crops",
+	"destination": "gmia",
+	"format":"mbtiles",
+	"mml": {
+            "name":"gmia",
+            "Layer": [
+		        {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"on"},
+                {"status":"off"}
+            ]
+        }
+    },
+{
+     	"source": "crops",
+	"destination": "cropland",
+	"format":"mbtiles",
+	"mml": {
+            "name":"cropland",
+            "Layer": [
+		        {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"off"},
+                {"status":"on"}
+            ]
+        }
     }
 ]

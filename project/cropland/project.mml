@@ -455,7 +455,7 @@
         "band": "1"
       },
       "name": "rubber",
-      "status": "on"
+      "status": "off"
     },
     {
       "geometry": "raster",
@@ -565,12 +565,12 @@
         "band": "1"
       },
       "name": "cropland",
-      "status": "off"
+      "status": "on"
     }
   ],
   "scale": 1,
   "metatile": 2,
-  "name": "rubber",
+  "name": "cropland",
   "description": "",
   "attribution": ""
 }

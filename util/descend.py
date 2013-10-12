@@ -60,7 +60,7 @@ def main():
         elif args[2] == "-t":
             args.pop(2)
             try:
-                max_level = int(args.pop(2))
+                max_children = int(args.pop(2))
                 assert max_children>0 and max_children<256
             except:
                 sys.exit("Max children must be an integer (1-256)")
