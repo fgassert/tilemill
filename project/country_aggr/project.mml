@@ -72,6 +72,24 @@
       "srs": "",
       "advanced": {},
       "name": "country20130819"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -120.00000992465169,
+        33.99997586252612,
+        -118.99991551884143,
+        35.00007026833639
+      ],
+      "id": "mod16a2pet0",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/fgassert/Downloads/f94e89a26322cb03d5ecce22a5480dfa/f94e89a26322cb03d5ecce22a5480dfa.NDVI.tif"
+      },
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "mod16a2pet0"
     }
   ],
   "scale": 1,

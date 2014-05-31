@@ -26,3 +26,8 @@ Map {
   polygon-opacity:1;
   polygon-fill:#ae8;
 }
+
+
+#mod16a2pet0 {
+  raster-opacity:.1;
+}

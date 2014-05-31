@@ -19,7 +19,8 @@
     "palette.mss",
     "base.mss",
     "labels.mss",
-    "backcolor.mss"
+    "backcolor.mss",
+    "tmp"
   ],
   "Layer": [
     {
@@ -113,7 +114,10 @@
       "id": "admin0",
       "class": "",
       "Datasource": {
-        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-boundary-lines-land.zip"
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-boundary-lines-land.zip",
+        "id": "admin0",
+        "project": "OSM_glob",
+        "srs": ""
       },
       "srs-name": "autodetect",
       "srs": "",

@@ -34,19 +34,21 @@ Map {
   text-halo-radius: 1;
   text-character-spacing:1;
   text-min-distance: 10;
+  text-opacity:1;
   [zoom=3] {
-    text-opacity:.6;
+    text-opacity:.8;
     text-size:12;
     text-wrap-width: 50;
   }
   [zoom=4] {
     text-size:15;
     text-wrap-width: 60;
+    text-character-spacing: 1;
   }
   [zoom=5] {
     text-size:16;
     text-wrap-width: 70;
-    text-halo-radius: 2;
+    text-halo-radius: 1.3;
     text-character-spacing: 2;
     text-transform: uppercase;
   }
@@ -54,13 +56,13 @@ Map {
     text-size:20;
     text-character-spacing: 4;
     text-wrap-width: 120;
-    text-opacity:.6;
+    text-opacity:.9;
     text-min-distance: 30;
-    text-halo-radius: 2;
+    text-halo-radius: 1.5;
     text-transform: uppercase;
   }
   [zoom>=7] {
-    text-opacity:.4;
+    text-opacity:.6;
     text-line-spacing: 1.5;
     text-halo-radius: 2;
     text-min-distance: 30;
@@ -108,22 +110,22 @@ Map {
   [zoom=6] {
     text-size:14;
     text-wrap-width: 70;
-    text-character-spacing: 1.5;
-    text-opacity:.6;
+    text-character-spacing: 1.3;
+    text-opacity:.8;
     text-transform: uppercase;
   }
   [zoom=7] {
     text-size:16;
     text-wrap-width: 120;
     text-min-distance: 30;
-    text-halo-radius: 2;
+    text-halo-radius: 1.5;
     text-character-spacing: 2;
     text-transform: uppercase;
   }
   [zoom>=7] {
-    text-opacity:.4;
+    text-opacity:.6;
     text-line-spacing: 1.5;
-    text-halo-radius: 2;
+    text-halo-radius: 1.5;
     text-min-distance: 30;
     text-transform: uppercase;
   }
@@ -161,41 +163,41 @@ Map {
   text-halo-radius: 1;
   text-min-distance: 10;
   text-wrap-width:120;
-  text-opacity:.9;
+  text-opacity:1;
   [zoom=5] {
-    text-size:12;
+    text-size:13;
     text-wrap-width: 40;
-    text-opacity: .5;
+    text-opacity: .8;
+    text-character-spacing: .5;
   }
   [zoom=6] {
-    text-size:14;
+    text-size:15;
     text-wrap-width: 40;
     text-min-distance: 10;
     text-character-spacing: 1;
-    text-opacity: .7;
   }
   [zoom=7] {
-    text-size:15;
+    text-size:16;
     text-wrap-width: 50;
     text-character-spacing: 1.5;
     text-transform: uppercase;
   }
   [zoom=8] {
-    text-halo-radius: 2;
-    text-size:17;
+    text-halo-radius: 1;
+    text-size:18;
     text-wrap-width: 70;
     text-line-spacing: 1;
     text-character-spacing: 2;
-    text-opacity:.7;
+    text-opacity:.8;
     text-transform: uppercase;
   }
   [zoom=9] {
-    text-halo-radius: 2;
-    text-size:19;
+    text-halo-radius: 1.5;
+    text-size:20;
     text-character-spacing: 2;
     text-wrap-width: 80;
     text-line-spacing: 3;
-    text-opacity:.5;
+    text-opacity:.7;
     text-transform: uppercase;
   }
   [zoom=10] {
@@ -204,7 +206,7 @@ Map {
     text-character-spacing: 3;
     text-wrap-width: 80;
     text-line-spacing: 3;
-    text-opacity:.4;
+    text-opacity:.5;
     text-transform: uppercase;
   }
 }
@@ -227,17 +229,12 @@ Map {
   text-min-distance: 10;
   text-wrap-width: 60;
   text-halo-radius:1;
-  text-opacity: 0.9;
-  [zoom=5] {
-  	text-opacity: 0.3;
-  	text-size: 10;
-  }
+  text-opacity: 1;
   [zoom=6] {
-    text-opacity: 0.4;
+    text-opacity: 0.8;
     text-size: 11;
   }
   [zoom=7] {
-    text-opacity: 0.5;
     text-size: 13;
   }
   [zoom=8] {

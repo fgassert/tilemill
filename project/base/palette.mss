@@ -36,7 +36,7 @@ Map { font-directory: url(./fonts); }
 /* ================================================================== */
 
 @land:              #191919;
-@water:             #333333;
+@water:             #333;
 @disputed:          #1b1b1b;
 @bg: @water;
 
@@ -44,8 +44,8 @@ Map { font-directory: url(./fonts); }
 /* BOUNDARY COLORS
 /* ================================================================== */
 
-@admin:           #333333;
-@urban: 			#1d1d1d;
+@admin:           #333;
+@urban: 			#1e1e1e;
 
 /* ================================================================== */
 /* LABEL COLORS
@@ -53,12 +53,12 @@ Map { font-directory: url(./fonts); }
 
 /* We set up a default halo color for places so you can edit them all
    at once or override each individually. */
-@place_halo:        fadeout(@land,50%);
+@place_halo:        fadeout(@land,40%);
 
 @country_text:      #eee;
 @country_halo:      @place_halo;
 
-@state_text:        #d8d8d8;
+@state_text:        #eee;
 @state_halo:        @place_halo;
 
 @city_text:         #ddd;

@@ -1,0 +1,42 @@
+@1:#FFFFA2;
+@2:#FFE600;
+@3:#FF9900;
+@4:#FF1900;
+@5:#BB0008;
+@6:#ccc;
+@7:#808073;
+
+#bws {
+  	polygon-opacity:1;
+  	polygon-gamma:.8;
+	[tbwsm>=0] {polygon-fill: @1}
+	[tbwsm>=1] {polygon-fill: @2}
+  	[tbwsm>=2] {polygon-fill: @3}
+  	[tbwsm>=3] {polygon-fill: @4}
+	[tbwsm>=4] {polygon-fill: @5}
+  	line-width:.5;
+    line-color:#333;
+  [zoom>2] {line-width:.7}
+  [zoom>3] {line-width:1}
+  [zoom>4] {line-width:1.5}
+  [zoom>5] {line-width:2}
+  ::line [basin_name="PO"]{
+    line-width:6;
+    line-color:#fff;
+    line-opacity:.8;
+	[tbwsm>=0] {polygon-fill: @1}
+	[tbwsm>=1] {polygon-fill: @2}
+  	[tbwsm>=2] {polygon-fill: @3}
+  	[tbwsm>=3] {polygon-fill: @4}
+	[tbwsm>=4] {polygon-fill: @5}
+    }
+  ::line1 [basin_name="PO"]{
+  [zoom>2] {line-width:.7}
+  [zoom>3] {line-width:1}
+  [zoom>4] {line-width:1.5}
+  [zoom>5] {line-width:2}
+    line-color:#333;
+    
+   }
+  
+}
